@@ -1,0 +1,24 @@
+sound = Instance.new("Sound", game.SoundService)
+sound.PlaybackSpeed = 0.33
+sound.TimePosition = 96.922
+sound.SoundId = "rbxassetid://1841054330"
+sound.Volume = 1
+sound.Looped = true
+
+echo = Instance.new("EchoSoundEffect", sound)
+echo.Delay = 0.2
+echo.DryLevel = 0
+echo.Feedback = 0.12
+echo.Priority = 1
+
+equal = Instance.new("EqualizerSoundEffect", sound)
+equal.HighGain = -2.6
+equal.LowGain = -21.5
+equal.MidGain = 4.6
+equal.Priority = 0
+
+pitch = Instance.new("PitchShiftSoundEffect", sound)
+pitch.Octave = 0.77
+pitch.Priority = 0
+
+sound:Play()
