@@ -1,0 +1,6 @@
+while true do
+	Ok = math.random(3, 10)
+	t = math.random(0, 24)
+	game:GetService("TweenService"):Create(game.Lighting, TweenInfo.new(Ok, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {ClockTime = t}):Play()
+	wait(Ok)
+end
