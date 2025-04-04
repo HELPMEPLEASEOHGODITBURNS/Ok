@@ -1,0 +1,6 @@
+while true do
+	Ok = math.random(2, 8)
+	Foggness = math.random(25, 300)
+	game:GetService("TweenService"):Create(game.Lighting, TweenInfo.new(Ok, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {FogEnd = Foggness}):Play()
+	wait(Ok)
+end
